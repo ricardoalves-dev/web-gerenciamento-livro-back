@@ -1,5 +1,13 @@
 # Web - Gerenciamento de Livros
 
+# **Execução**
+1. checkout no branch **develop**
+2. na pasta do projeto, executar o comando **docker-compose-up** para criar o banco de dados postgres
+3. criar arquivo .env e configurar **DATABASE_URL="postgresql://postgres:postgres@localhost:5432/db?schema=public"**
+4. abrir o projeto no vscode e usar o comando **npm install** para instalar dependências
+5. executar o comando **npx prisma migrate dev** para aplicar as migrations no banco de dados
+6. executar o comando **npm run dev** para iniciar a API
+
 **Tema da Aplicação: Sistema de Controle para Biblioteca**
 
 **Objetivo:**
